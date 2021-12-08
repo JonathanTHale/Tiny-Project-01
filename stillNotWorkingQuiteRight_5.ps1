@@ -1,5 +1,5 @@
 $count=0
-do{try{
+do{
 
 Remove-Item -path "C:\Users\$env:Adatum\Administrator\AppData\Local\Microsoft\Windows\Temporary Internet Files\*" 
 -Recurse -Force -EA SilentlyContinue -Verbose | 
@@ -22,6 +22,6 @@ Start-sleep -Seconds 5
 $count++
  
 }until($count -eq 5 -or $success)
-if(-not($success)){exit}}
+if(-not($success)){exit}
 
 #I just wanted it to look readable and spacing it like an email is the only way I know how
