@@ -1,14 +1,6 @@
 $count=0
 do{
-<# The below was used in the NLB exercise to clear the cache at the start of 
-and prior to each incrementation. We needed to clear the cache to ensure that there was 
-equal likelihood of the NLB webhosting to pull the HTML page 
-from either Server 1 or 2. We altered the page of Server 2 so that when 
-IE would open each time the difference would be noticeable to us. Whereas 
-we would normally have to open IE to the NLB URL, close, clear cache, and try
-again manually, this script does it all for us while pausing with enough time 
-in between for the page to load and our eyes to recognize what's going on.
-
+<# 
 For use on any other PCs outside of the lab environment, I've commented out 
 the NLB and IE references and just replaced them with the notepad app
 so that the functionality can be viewed on any PC. 
